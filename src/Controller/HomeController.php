@@ -14,7 +14,7 @@ class HomeController extends AbstractController
     public function index(Request $request, string $slug, int $id): Response
     {
         // dd($request->attributes->getInt('id'));
-        dd($slug, $id);
+        
         return new Response('hello la team '. strtoupper($request->query->get('team', 'noteam')).'!' );
     }
 }
